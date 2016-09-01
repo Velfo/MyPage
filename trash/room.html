@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="dan.png">
+	<link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="vugar aghayev Vugar Aghayev vugaraghayev.com">
+	<title>Vugar</title>
+	<link rel="stylesheet" type="text/css" href="appear.css">
+	 <!--Bootstrap stuff-->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    	<!--Libraries for Three.js stuff-->
+    	<script type="text/javascript" src="libs/three.js"></script>
+    	<script type="text/javascript" src="libs/stats.js"></script>
+    	<script type="text/javascript" src="libs/dat.gui.js"></script>
+    	
+    
+	<!--To handle the processing  -->
+    	<script type="text/javascript" src="processing.js"></script>
+	<!--To load on smaller screens-->
+		    	
+</head>
+<body onLoad="window.scroll(0, 0)"  style="background-color: #0d0d0d;">
+	
+	<div class="container" style=" position: relative; left:0; height: 5000px; left: 20px; width: 1100px">
+	
+	
+	
+	<canvas id = "myCanvas" data-processing-sources="room.pde">
+		
+	</canvas>
+	
+	
+	
+	
+	
+	<!--Considering the window width-->
+	
+	<script>
+		// Returns height of HTML document
+		var windHeight = $( document ).height();
+		var navsLeftPosition = $("#navi").offset().left;
+		var divWithQuote = document.getElementById("quoteContainer");
+		
+		$("#myCanvas").parent().css({position: 'relative'});
+		$("#myCanvas").css({top: 2500, left: 0, position:'absolute'});
+		
+	</script>
+	
+		
+	
+	
+	</div> 
+	
+</body>
+</html>
+
+

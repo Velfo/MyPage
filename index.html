@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vugar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/look.css">
+  <link href="css/hover.css" rel="stylesheet" media="all">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/libs/three.js"></script>
+  <script type="text/javascript" src="../libs/stats.js"></script>
+  <script type="text/javascript" src="../libs/dat.gui.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function() {
+    $("#scrom").click(function(event){
+        $('html, body').animate({scrollTop: '+=200px'}, 800);
+    });
+	});
+  </script>
+
+</head>
+<body>
+<section id="section04" class="demo">
+	<h1 id="vug" style="color:#fcf4d9;">Vugar Aghayev Page</h1>
+	<a id="scrom" href="#"><span id="scro"></span>Scroll</a>
+</section>
+<div id="nana">
+	<a style="display:block" href="#whoIam">
+		<div id="navme" class="nav hvr-shrink hvr-rectangle-in ">
+		<p>Who I am</p>
+		</div>
+	</a>	
+<!--Where navresume goes --> 
+	<a style="display:block" href="#resume">
+		<div id="navresume" class="nav hvr-shrink hvr-rectangle-in">
+		<p>My Resume</p>
+		</div>
+	</a>	
+<!--Where navprojects go --> 
+	<a style="display:block" href="#demoArea">	
+		<div id="navprojects" class="nav hvr-shrink hvr-rectangle-in">
+		<p>Work Demo</p>
+		</div>
+	</a>	
+<!--Where navwork goes --> 
+	<a style="display:block" href="#demoArea">
+		<div id="navwork" class="nav hvr-shrink hvr-rectangle-in">
+		<p>Work Demo</p>
+		</div>
+	</a>	
+<!--Where navcontact me goes --> 
+	<a style="display:block" href="#contact">
+		<div id="navcontact" class="nav hvr-shrink hvr-rectangle-in">
+		<p>Contact me for work</p>
+		</div>
+	</a>
+</div>
+ <!--Where Who I am goes --> 
+ 	<div id="whoIam">
+		<div id="textPos">
+					<p>{</p> 
+					<p>Hi, my name is Vugar. My passion lies in creating things. This could be anything from a sophisticated work of art to a beautifully crafted piece if programming code. I also love math and engineering. For me, functionality of things is as important as their aesthetic look. These two are like a loving couple; they go hand in hand. You cannot separate them or have just one without the other.</p>
+					
+					<p>Hence, I am a Software Developer specializing in Graphics and Multimedia. I love this field because it challenges me and gives me opportunity to combine my knowledge in computer science and my passion for art to create interesting rendering effects for images and videos</p> 
+					<p>}</p>
+		</div>
+	</div>
+ <!--Where resume goes --> 
+ 	<div id="resume">
+
+	</div>
+ <!--Script reated to resume area-->
+	<script src="js/pdfobject.js"></script>
+	<script>PDFObject.embed("assets/Resume(VA).pdf", "#resume");</script> 
+
+<!-- For holding the WebGL stuff -->	
+	<div id="demoArea">
+	
+		<table style="width:100%">
+		  <tr>
+		    <th style="color:#000;">Webpages</th>
+		    <th style="color:#000;">THREE.js</th>
+		    <th style="color:#000;">Processing.js</th>
+		  </tr>
+		  <tr>
+		    <td><a href="http://vugaraghayev.com/">My other page</a></td>
+		    <td><a href="http://localhost/mypage/js/Projects/ball.html">Bouncing Sphere</a></td>
+		    <td><a href="http://vugaraghayev.com/ro.html">Dark Room</a></td>
+		  </tr>
+		  <tr>
+		    <td>Eve</td>
+		    <td>Jackson</td>
+		    <td>94</td>
+		  </tr>
+		  <tr>
+		    <td>John</td>
+		    <td>Doe</td>
+		    <td>80</td>
+		  </tr>
+		</table>
+
+	</div>
+
+	<!--Contanct-->
+	<div id="contact">
+		<p>{</p>
+		<p style="color:#404040; font-weight: bold; font-size: 20px;">email: aghayev.vugar@gmail.com</p>
+		<p style="color:#404040; font-weight: bold; font-size: 20px;">full stack web development</p>
+		<p>Frontend: HTML, CSS, JavaScript and jQuery</p>
+		<p>Backend: PHP, Python and Django </p>
+		<p>Databases: SQL, MySQL and PostgreSQL</p>
+		<p>Design: Adobe Photoshop, Adobe Illustrator, Affinity Designer and Affinity Photo</p>
+		<p style="color:#404040; font-weight: bold; font-size: 20px;">Graphics and Multimedia</p>
+		<p>Platforms: Three.js, Processing.js </p>
+		<p>Software: Maya, Houdini, Blender </p>
+		<p>}</p>
+	</div>
+			
+	
+</body>
+</html>
+
